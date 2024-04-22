@@ -1,0 +1,639 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+}
+/*navbar start*/
+h1{
+    font-size: 2.1rem;
+    color:white ;
+    margin-top: 30px;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+.hr-1{
+    border: dotted;
+    border-bottom: none;
+    margin: 10px auto;
+}
+img{
+    width: 80px;
+}
+[calss*="col-"] {
+    float: left;
+    padding: 10px;
+}
+[class*="col-"] {
+    width: 100%;
+}
+
+.navbar{
+    background-color: #137d86;
+    padding: 1% 7%;
+    text-align: center;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.navbar h1{
+    margin: 0;
+    padding-top: 10px;
+}
+.navbar a{
+    display: flex;
+    flex-direction: column;
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 5px;
+}
+.navbar a:hover{
+    background-color: #2e96a0;
+}
+/*navbar end*/
+
+/* profile desgin start */
+.profile{
+    text-align: center;
+    position: relative;
+    padding: 170px 20px;
+}
+.profile .img-1{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    transition: transform 10s;
+}
+.profile .img-1:hover{
+    transform: rotate(111160deg);
+}
+.profile .img-2{
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+    transition: transform 10s;
+}
+.profile .img-2:hover{
+    transform: rotate(111160deg);
+}
+h2{
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 30px;
+}
+p{
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    font-size: 18px;
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* profile desgin end*/
+
+/* about me desgin start */
+H3{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px;
+}
+.about-me{
+    padding: 1% 7%;
+    text-align: center;
+    background-color: #2e96a0;
+    color: rgb(255, 255, 255);
+    font-family:  "Montserrat", sans-serif;
+}
+.about-me-img img{
+    width:200px;
+    border-radius: 50%;
+    text-align: center;
+    border: 5px solid white;
+}
+
+.about-me-dett p{
+    font-family:  "Montserrat", sans-serif;
+}
+
+
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-17:disabled {
+  cursor: default;
+}
+
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+
+.btn-17 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-17 [hidden] {
+  display: none;
+}
+
+.btn-17 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+}
+
+.btn-17,
+.btn-17 .text-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-17 .text-container {
+  display: block;
+  mix-blend-mode: difference;
+}
+
+.btn-17 .text {
+  display: block;
+  position: relative;
+}
+
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.btn-17:after,
+.btn-17:before {
+  --skew: 0.2;
+  background: #fff;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.btn-17:after {
+    --progress: 0%;
+    left: calc(50% + 50% * var(--skew));
+    top: 102%;
+    z-index: -1;
+}
+
+.btn-17:hover:before {
+    --progress: 100%;
+}
+
+.btn-17:hover:after {
+    --progress: -102%;
+}
+
+
+
+.about-me::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/* about me desgin end */
+
+/* card desgin start */
+
+li{
+  list-style-position: inside;
+  padding: 10px;
+}
+
+/* School details start */
+.School-details{
+    padding: 1% 1%;
+}
+.school-card{
+  padding: 1%;
+}
+.School-details .school-card{
+  background-color: rgb(34, 147, 223);
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  height: 700px;
+}
+.school-card:hover{
+  box-shadow: 5px 5px 20px black;
+}
+.school-icon{
+  text-align: center;
+}
+.school-icon img{
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.school-img{
+  border: 5px solid #000000;
+}
+
+.school-title{
+  background-color: #4d777a;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin: 10PX;
+}
+
+.School-details::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+/* School details end */
+
+/* WORK-EXPERIENCE card desgin start */
+
+
+.WORK-EXPERIENCE{
+  padding: 1% 1%;
+}
+.school-card{
+padding: 1%;
+}
+.WORK-EXPERIENCE .school-card{
+background-color: rgb(34, 147, 223);
+padding: 10px;
+border-radius: 20px;
+transition: 0.3s;
+height: 700px;
+}
+
+.WORK-EXPERIENCE::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/* WORK-EXPERIENCE card desgin end */
+
+
+/* skills card desgin start */
+
+.SKILLS{
+  padding: 1% 1%;
+}
+.school-card{
+padding: 1%;
+}
+.skills-img{
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 5px solid #000000;
+}
+.SKILLS .school-card{
+background-color: rgb(34, 147, 223);
+padding: 10px;
+border-radius: 20px;
+transition: 0.3s;
+height: 700px;
+}
+.skills-desc LI{
+  list-style: none;
+  font-weight: bold;
+  margin: 18px 5px;
+  text-transform: uppercase;
+  padding-right:10px ;
+  position: relative;
+}
+.skills-desc LI::before{
+    content: '';
+    position: absolute;
+    background: rgb(255, 255, 255 ,0.5);
+    width: 100%;
+    height: 10px;
+    top: 30px;
+    left: 0;
+    border-radius: 1000px;
+}
+.skills-desc LI::after{
+    content: '';
+    position: absolute;
+    background: rgb(0, 0, 0);
+    width: 0;
+    height: 10px;
+    top: 30px;
+    left: 0;
+    border-radius: 1000px;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+.skills-desc LI.list1::after{
+  animation-name: html;
+  
+}
+
+@keyframes html {
+  to{
+    width: 100%;
+  }
+}
+
+.skills-desc LI.list2::after{
+  animation-name: css;
+}
+
+@keyframes css {
+  to{
+    width: 90%;
+  }
+}
+
+.skills-desc LI.list3::after{
+  animation-name: javascript;
+}
+
+@keyframes javascript {
+  to{
+    width: 80%;
+  }
+}
+.skills-desc LI.list4::after{
+  animation-name: jquery;
+}
+
+@keyframes jquery {
+  to{
+    width: 70%;
+  }
+}
+.skills-desc LI.list5::after{
+  animation-name: boostrap;
+}
+
+@keyframes boostrap {
+  to{
+    width: 60%;
+  }
+}
+.skills-desc LI.list6::after{
+  animation-name: node;
+}
+
+@keyframes node {
+  to{
+    width: 50%;
+  }
+}
+.skills-desc LI.list7::after{
+  animation-name: express;
+}
+
+@keyframes express {
+  to{
+    width: 40%;
+  }
+}
+.skills-desc LI.list8::after{
+  animation-name: react;
+}
+
+@keyframes react {
+  to{
+    width: 30%;
+  }
+}
+.skills-desc LI.list9::after{
+  animation-name: git;
+}
+
+@keyframes git {
+  to{
+    width: 20%;
+  }
+}
+
+
+
+
+.SKILLS::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/* skills card desgin end */
+
+/* card desgin end */
+
+/* contact us desgin start */
+
+
+.contact-us{
+  padding: 1% 2%;
+  background-color: #39a4ac;
+  color: white;
+  text-align: center;
+}
+.contact{
+  padding: 1% 2%;
+}
+.Achievement{
+  padding: 1% 2%;
+}
+.contact-link{
+  padding: 1% 2%;
+}
+
+h3{
+  padding: 0px;
+  text-transform: uppercase;
+}
+.contact input ,textarea{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  margin: 10px;
+  text-align: center;
+}
+.contact button{
+  background-color: blueviolet;
+  border: none;
+  width: 80px;
+  height: 30px;
+  font-size: 1rem;
+  margin: 10px 0px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.hr-123{
+    border: dotted;
+    border-bottom: none;
+    margin: 10px auto;
+    width: 50%;
+}
+
+.icon .btn{
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  width: 40px;
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.btn:hover{
+  background-color: darkgrey;
+  box-shadow: 7px 7px 5px black;
+}
+
+/* .contact-link{
+  position: relative;
+}
+.icon{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
+} */
+
+.contact-us::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+/* contact us desgin end */
+
+
+
+/* contact link start */
+
+
+
+/* contact link start */
+
+/* footer desgin start */
+
+
+.footer{
+  background-color: black;
+  padding: 20px;
+  font-size: 0.6rem;
+  text-align: center;
+}
+.footer a{
+  display: block;
+  font-size: 1rem;
+}
+.footer a:hover{
+  /* color: rgba(255, 255, 255, 0.356); */
+  box-shadow: 3px 3px 3px 2px white;
+}
+.footer-des{
+  color: white;
+  font-size: 0.6rem;
+}
+h6{
+  font-size: 0.8rem;
+  padding: 0px;
+}
+
+.footer::after{
+  content: '';
+  clear: both;
+  display: table;
+} 
+
+
+/* footer desgin end */

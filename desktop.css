@@ -1,0 +1,136 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*navbar start*/
+
+[class*="col-"]{
+    float: left;
+}
+.nav-img{
+    text-align: left;
+}
+.nav-name h1{
+    text-align: right;
+}
+.navbar .nav-link a{
+    flex-direction: row;
+    justify-content: flex-end;
+    display: inline;
+    padding: 5px;
+    background-color: transparent;
+    
+}
+.nav-link{
+    margin-top: 20px;
+    padding-left: 50px;
+}
+.navbar a:hover{
+    background-color: #2e96a0;
+    color: white;
+}
+/*navbar end*/
+/* profile  des start */
+.profile .img-2{
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+    width: 100px;
+    transition: width 10s transform 10s;
+}
+.profile .img-2:hover{
+    transform: rotate(111160deg);
+    width: 120px;
+}
+.profile .img-1{
+    position: absolute;
+    width: 100px;
+    transition: width 10s transform 10s;
+}
+.profile .img-1:hover{
+    transform: rotate(111160deg);
+    width: 120px;
+}
+h2{
+    margin-bottom: 30px;
+}
+p{
+    width: 80%;
+    margin: 0 auto;
+}
+/* profile  des start */
+
+/* about me desgin start */
+
+.about-me-img {
+    margin-top: 100px;
+}
+.about-me-img img{
+    width: 250px;
+}
+.about-me-dett p{
+    padding: 20px;
+    text-align: left;
+
+}
+h3{
+    font-size: 1.4rem;
+}
+
+.card-desgin::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* about me desgin start */
+
+/* contact us desgin start */
+.contact button{
+    background-color: blueviolet;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    margin: 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-us::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/* contact us desgin end */
+
+/* footer desgin start */
+
+.footer a{
+    display: inline;
+}
+
+.footer::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/* footer desgin end */
