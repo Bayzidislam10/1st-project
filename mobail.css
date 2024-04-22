@@ -4,6 +4,7 @@
 }
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 /*navbar start*/
 h1{
